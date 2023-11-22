@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE = edge">
+        <title>
+            Marker Based AR Portfolio
+        </title>
+        <script src = "https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src = "https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    </head>
+    <body style = "margin: epx; overflow: hidden;">
+        <a-scene vr-mode-ui = "enabled: false;" embedded arjs = "trackingMethod: best; sourceType: webcam; debugUiEnabled: false;">
+            <a-assets>
+                <img id = "card2" src = "">
+            </a-assets>
+            <!--Virtual Flight-->
+            <a-marker-camera type = "pattern" url = "./pattern markers/Virtual Flight/pattern-icon-01.patt"></a-marker-camera>
+            
+            <!--AR Menu Card-->
+            <a-marker-camera type = "pattern" url = "./pattern markers/AR Menu Card/pattern-icon-02.patt"></a-marker-camera>
+
+            <!--AR Navigation-->
+            <a-marker-camera type = "pattern" url = "./pattern markers/AR Navigation/pattern-icon-03.patt"></a-marker-camera>
+
+            <!--Virtual Tour-->
+            <a-marker-camera type = "pattern" url = "./pattern markers/Virtual Tour/pattern-icon-04.patt"></a-marker-camera>
+        </a-scene>
+    </body>
+</html>
